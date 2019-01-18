@@ -1,0 +1,9 @@
+{
+	"--token": "2ef785ca946170b7086668132175eb01386943a1",
+	"--server": "http://my.sonar.server:9000",
+	"--parent-project": "zarplataiupravleniepersonalomkorp:develop",
+	"--child-projects": "zarplataiupravleniepersonalomkorp:master,zarplataiupravleniepersonalomprof:develop",
+	"--exclude-projects": "upravleniepredpriiatiem:develop",
+	"--statuses": "CLOSED",
+	"--edt2cfg": false
+}
