@@ -312,20 +312,61 @@
 	Возврат
 	"<!DOCTYPE html>
 	|<html>
+	|
 	|<head>
 	|<meta charset=""utf-8"">
 	|<title>Отчет sonar-helper</title>
 	|<meta name=""description"" content=""Отчет sonar-helper"">
 	|</head>
+	|<style>
+	|table {
+	|margin: 20px 0;
+	|text-align: left;
+	|border: 1px solid gray;
+	|border-spacing: 0px;
+	|border-radius: 3px;
+	|font-size: 14px;
+	|width: auto;
+	|}
+	|
+	|td,
+	|th {
+	|border: 1px solid gray;
+	|padding: 3px;
+	|}
+	|
+	|table#head {
+	|margin: 20px 0;
+	|text-align: left;
+	|border: 0px;
+	|border-spacing: 0px;
+	|font-size: 14px;
+	|width: auto;
+	|}
+	|
+	|table#head td {
+	|border: 0px;
+	|padding: 3px;
+	|}
+	|</style>
 	|<body>
-	|<div>
-	|<p><b>Сводная информация</b></p>
-	|<p>
-	|<b>Адрес сервера: </b>%2<br/>
-	|<b>Дата формирования: </b>%1<br/>
-	|<b>Количество отчетов: </b>%3<br/>
-	|</p>
-	|</div>
+	|<h1>Отчеты по проектам</h1>
+	|<h2>Данные формирования</h2>
+	|<table id=""head"">
+	|<tr>
+	|<td><b>Адрес сервера:</b></td>
+	|<td>%2</td>
+	|</tr>
+	|<tr>
+	|<td><b>Дата формирования:</b></td>
+	|<td>%1</td>
+	|</tr>
+	|<tr>
+	|<td><b>Количество отчетов:</b></td>
+	|<td>%3</td>
+	|</tr>
+	|</table>
+	|<h2>Отчеты по проектам</h2>
 	|%4
 	|</body>
 	|</html>";
@@ -334,7 +375,7 @@
 Функция ШаблонТаблица()
 	Возврат 
 	"<div>
-	|<table border=""1"">
+	|<table>
 	|<caption><b>Проект: </b>%1</caption>
 	|<tr>
 	|<th>Метрика</th>
